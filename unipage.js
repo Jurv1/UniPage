@@ -24,7 +24,7 @@ function filter(n) {
         if (courses[i].prices[0] === null && courses[i].prices[1] === null) continue
         //если мы ищем ДО какой-либо цены
         else if (min == null) {
-            if (max >= courses[i].prices[0] && courses[i].prices[0] || max >= courses[i].prices[1] && courses[i].prices[1] != null) console.log(courses[i].name)
+            if (max >= courses[i].prices[0] && courses[i].prices[0] != null || max >= courses[i].prices[1] && courses[i].prices[1] != null) console.log(courses[i].name)
         }
         //если мы ищем ОТ какой-нибудь цены
         else if (max == null) {
